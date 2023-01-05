@@ -34,4 +34,11 @@ public class FizzbuzzTest {
         String expectedOutput = "fizzbuzz";
         assertEquals(expectedOutput, subject.handleFizzBuzz(input));
     }
+
+    @Test
+    public void handleFizzBuzz_GivenInputIs_Not_DivisibleBy_3_AND_5_Return_not_fizzy_or_buzzy() {
+        String input = "11";
+        String expectedOutput = "not fizzy or buzzy";
+        assertEquals(expectedOutput, subject.handleFizzBuzz(input));
+    }
 }

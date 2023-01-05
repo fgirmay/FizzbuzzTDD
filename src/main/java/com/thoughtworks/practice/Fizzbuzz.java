@@ -14,7 +14,8 @@ public class Fizzbuzz {
 
         } catch (NumberFormatException nfx) {
             System.out.println("Input is not a number");
+            return input;
         }
-        return output;
+        return output == "" ? "not fizzy or buzzy" : output;
     }
 }
