@@ -41,4 +41,11 @@ public class FizzbuzzTest {
         String expectedOutput = "not fizzy or buzzy";
         assertEquals(expectedOutput, subject.handleFizzBuzz(input));
     }
+
+    @Test
+    public void handleFizzBuzz_GivenInputIs_Not_Number_Return_theInput() {
+        String input = "adb";
+        String expectedOutput = "adb";
+        assertEquals(expectedOutput, subject.handleFizzBuzz(input));
+    }
 }
