@@ -15,9 +15,16 @@ public class FizzbuzzTest {
     }
 
     @Test
-    public void handleFizzBuzz_GivenInputIsDivisibleBy3_Return_fizz() {
+    public void handleFizzBuzz_GivenInputIsDivisibleBy_3_Return_fizz() {
         String input = "12";
         String expectedOutput = "fizz";
+        assertEquals(expectedOutput, subject.handleFizzBuzz(input));
+    }
+
+    @Test
+    public void handleFizzBuzz_GivenInputIsDivisibleBy_5_Return_buzz() {
+        String input = "10";
+        String expectedOutput = "buzz";
         assertEquals(expectedOutput, subject.handleFizzBuzz(input));
     }
 }
